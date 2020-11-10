@@ -30,13 +30,13 @@ gulp.task('minifyJS', function() {
         var m = content.match(/\/\*![\s\S]*?\*\//img);
         return m && m.join('\n') + '\n' || '';
     }
-  })).pipe(gulp.dest('./src/'));
+  })).pipe(gulp.dest('./src'));
 });
 
 gulp.task('replaceNameJS', function() {
-  return gulp.src('./src/scripts.js')
+  return gulp.src('src/scripts.js')
     .pipe(replaceName(/\.js/g, '.min.js'))
-    .pipe(gulp.dest('./src'));
+    .pipe(gulp.dest('src/'));
 });
 
 gulp.task('default', () =>

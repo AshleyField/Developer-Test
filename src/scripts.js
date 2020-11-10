@@ -1,2 +1,2 @@
-
+$(document).ready((function(){$(".cart-icon").on("click",(function(){"closed"==$(".cart-container").data("state")?($(".cart-container").addClass("visible").removeClass("hidden").data("state","open"),$(".cart-icon").addClass("icon-clicked")):($(".cart-container").addClass("hidden").removeClass("visible").data("state","closed"),$(".cart-icon").removeClass("icon-clicked"))}))}));
 //# sourceMappingURL=scripts.js.map
