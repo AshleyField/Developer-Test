@@ -1,0 +1,39 @@
+.header {
+    width: 100%;
+    background-color: $header;
+    margin: 1em 0;
+    box-sizing: border-box;
+    overflow: auto;
+
+    .cart {
+        &-icon {
+            padding: .5em 2em;
+            float: right;
+            position: relative;
+
+            img {
+                width: 1.5em;
+                display: block;
+            }
+        }
+
+        .cart-bubble {
+            display: block;
+            text-align: center;
+            position: absolute;
+            top: 7px;
+            right: 20px;
+            background-color: lightblue;
+            border-radius: 50%;
+            width: 1em;
+            height: 1em;
+            padding: .25em;
+            font-size: 0.75em;
+            color: $font1;
+        }
+
+        &-container {
+            display: none;
+        }
+    }
+}
