@@ -1,0 +1,14 @@
+$header: #F6F6F7;
+$font1: #222222;
+$font2: #888888;
+$required: #C90000;
+$lightgrey: #CCCCCC;
+$darkgrey: #222222;
+
+@mixin mainFont {
+	font-family: 'Roboto', sans-serif;
+}
+
+@mixin font-shadow {
+	text-shadow: 0 2px 5px rgba(0,0,0,1);
+}
