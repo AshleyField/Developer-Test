@@ -55,7 +55,7 @@
             z-index: 5;
             top: 3.5em;
             right: 1.5em;
-            width: 27em;
+            width: 80%;
             background-color: #FFFFFF;
             border: 1px $lightgrey solid;
             padding: 1em;
@@ -63,6 +63,9 @@
 
             .cart-item {
                 display: flex;
+                margin: 1em 0;
+                position: relative;
+
                 &-image {
                     width: 5em;
 
@@ -77,6 +80,15 @@
                     .cart-text {
                         margin: 0 0 1em 1em;
                     }
+                }
+
+
+
+                .cart-remove {
+                    position: absolute;
+                    right: 1em;
+                    top: 50%;
+                    transform: trannslateY(-50%);
                 }
             }
 
@@ -106,7 +118,11 @@
                 display: block;
             }
 
-            .cart-container:hover .cart-icon  {
+            .cart-icon:hover + .cart-container {
+                display: block;
+            }
+
+            .cart-icon:hover {
                 background-color: #FFFFFF;
                 border-top: 1px $lightgrey solid;
                 border-left: 1px $lightgrey solid;
@@ -114,11 +130,7 @@
                 z-index: 10;
             }
 
-            .cart-icon:hover + .cart-container {
-                display: block;
-            }
-
-            .cart-icon:hover {
+            .icon-hovered{
                 background-color: #FFFFFF;
                 border-top: 1px $lightgrey solid;
                 border-left: 1px $lightgrey solid;
